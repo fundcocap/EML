@@ -3,7 +3,11 @@ import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
 import FaqPreview from "@/components/FaqPreview";
 
-export const metadata: Metadata = { title: "Contact Us | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Electrify MicroGrid in Victoria Island, Lagos, to learn more about our solar mini-grid projects or explore partnership and investment opportunities.",
+};
 
 export default function Contact() {
   return (

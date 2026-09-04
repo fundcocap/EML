@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 
-export const metadata: Metadata = { title: "Cookies Policy | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "Cookies Policy",
+  description:
+    "Read how Electrify MicroGrid uses session and persistent cookies on electrifymicrogrid.ng, and how to manage your cookie preferences.",
+};
 
 function P({ children }: { children: React.ReactNode }) {
   return <p className="text-text-secondary leading-relaxed mb-4">{children}</p>;

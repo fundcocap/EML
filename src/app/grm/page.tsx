@@ -3,7 +3,11 @@ import PageHero from "@/components/PageHero";
 import GrmForm from "@/components/GrmForm";
 import FaqPreview from "@/components/FaqPreview";
 
-export const metadata: Metadata = { title: "Grievance Redress Mechanism | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "Grievance Redress Mechanism",
+  description:
+    "Submit complaints, concerns, or feedback about Electrify MicroGrid's services, staff, or community projects through our Grievance Redress Mechanism.",
+};
 
 export default function GRM() {
   return (

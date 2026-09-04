@@ -4,7 +4,11 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import JoinCta from "@/components/JoinCta";
 
-export const metadata: Metadata = { title: "About Us | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Electrify MicroGrid Limited (EML) is a renewable energy asset management company delivering solar mini-grids across Nigeria using a Design, Finance, Build, and Operate model.",
+};
 
 const DFBO = [
   {

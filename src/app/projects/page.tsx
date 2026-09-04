@@ -5,7 +5,11 @@ import PageHero from "@/components/PageHero";
 import JoinCta from "@/components/JoinCta";
 import { PROJECTS } from "@/lib/projects";
 
-export const metadata: Metadata = { title: "Projects | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Explore Electrify MicroGrid's portfolio of solar mini-grid sites across Jigawa, Cross River, Katsina, Ondo, Plateau, Kogi, and Kano states, bringing clean electricity to rural Nigerian communities.",
+};
 
 export default function Projects() {
   return (

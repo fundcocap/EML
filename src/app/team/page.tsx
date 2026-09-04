@@ -3,7 +3,11 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import JoinCta from "@/components/JoinCta";
 
-export const metadata: Metadata = { title: "Our Team | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "Our Team",
+  description:
+    "Meet the management and regional team behind Electrify MicroGrid, seasoned professionals with extensive experience in energy, environmental management, and project development.",
+};
 
 const MANAGEMENT = [
   {

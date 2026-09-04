@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import JoinCta from "@/components/JoinCta";
 
-export const metadata: Metadata = { title: "FAQs | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "FAQs",
+  description:
+    "Answers to common questions about mini-grids, how they are designed and financed, and how they benefit rural electrification in Nigeria.",
+};
 
 const FAQS = [
   {

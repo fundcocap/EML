@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import JoinCta from "@/components/JoinCta";
 
-export const metadata: Metadata = { title: "Services | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "Our Services",
+  description:
+    "Electrify MicroGrid offers micro and mini-grid development, project finance, and operations and maintenance services to deliver reliable renewable energy to rural communities.",
+};
 
 const SERVICES = [
   {

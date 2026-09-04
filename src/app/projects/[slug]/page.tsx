@@ -16,8 +16,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
+  if (!project) {
+    return { title: "Project" };
+  }
   return {
-    title: project ? `${project.title} | Electrify MicroGrid` : "Project | Electrify MicroGrid",
+    title: project.title,
+    description: `${project.excerpt} A solar mini-grid project delivered by Electrify MicroGrid as part of its portfolio of rural electrification sites in Nigeria.`,
+    openGraph: {
+      title: project.title,
+      description: project.excerpt,
+      images: [{ url: project.image }],
+    },
   };
 }
 

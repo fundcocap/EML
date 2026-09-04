@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 
-export const metadata: Metadata = { title: "Privacy Policy | Electrify MicroGrid" };
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Learn how Electrify MicroGrid collects, uses, and protects your personal data when you use electrifymicrogrid.ng.",
+};
 
 function P({ children }: { children: React.ReactNode }) {
   return <p className="text-text-secondary leading-relaxed mb-4">{children}</p>;
