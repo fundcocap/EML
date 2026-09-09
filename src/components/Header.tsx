@@ -19,6 +19,7 @@ const NAV: {
   },
   { label: "Projects", href: "/projects" },
   { label: "Services", href: "/service" },
+  { label: "Partners", href: "/partners" },
   {
     label: "Resources",
     href: "/faqs",

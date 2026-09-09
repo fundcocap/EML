@@ -3,15 +3,9 @@ import Link from "next/link";
 import JoinCta from "@/components/JoinCta";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import OperationsMap from "@/components/OperationsMap";
+import LogoMarquee from "@/components/LogoMarquee";
 import { PROJECTS } from "@/lib/projects";
-
-const PARTNERS = [
-  { name: "KPMG", src: "/uploads/2024/10/KPMG-LOGO.svg" },
-  { name: "FundCo Capital Managers", src: "/uploads/2024/10/Stanbic.svg" },
-  { name: "UBA", src: "/uploads/2024/10/UBA.svg" },
-  { name: "InfraCredit", src: "/uploads/2024/10/Ajayi.svg" },
-  { name: "Clean Energy Fund", src: "/uploads/2024/10/Capital-1.svg" },
-];
+import { PARTNERS } from "@/lib/partners";
 
 const SERVICES = [
   {
@@ -179,26 +173,19 @@ export default function Home() {
       <OperationsMap />
 
       <section className="bg-surface border-y border-border">
-        <div className="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20 text-center">
           <h2 className="text-sm font-semibold uppercase tracking-widest text-text-secondary mb-10">
-            People We Work With
+            Backed By
           </h2>
-          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8">
-            {PARTNERS.map((p) => (
-              <div
-                key={p.name}
-                className="rounded-2xl border border-border bg-white px-6 py-5 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <Image
-                  src={p.src}
-                  alt={p.name}
-                  width={140}
-                  height={60}
-                  className="h-9 sm:h-10 w-auto"
-                />
-              </div>
-            ))}
-          </div>
+        </div>
+        <LogoMarquee partners={PARTNERS} />
+        <div className="mx-auto max-w-6xl px-6 pb-16 sm:pb-20 text-center">
+          <Link
+            href="/partners"
+            className="inline-block mt-4 rounded-full border border-navy px-6 py-3 text-sm font-semibold text-navy hover:bg-navy hover:text-white transition-colors"
+          >
+            Meet Our Partners
+          </Link>
         </div>
       </section>
 
