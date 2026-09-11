@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import JoinCta from "@/components/JoinCta";
+import DfboReveal from "@/components/DfboReveal";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -177,22 +178,7 @@ export default function About() {
             through strategic joint ventures with off-grid renewable energy
             development companies.
           </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {DFBO.map((d, i) => (
-              <div
-                key={d.title}
-                className="rounded-2xl border border-border bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-white text-sm font-bold mb-4">
-                  {i + 1}
-                </div>
-                <h3 className="font-semibold text-brand mb-2">{d.title}</h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
-                  {d.text}
-                </p>
-              </div>
-            ))}
-          </div>
+          <DfboReveal steps={DFBO} />
         </div>
       </section>
 

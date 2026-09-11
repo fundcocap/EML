@@ -4,6 +4,7 @@ import JoinCta from "@/components/JoinCta";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import OperationsMap from "@/components/OperationsMap";
 import LogoMarquee from "@/components/LogoMarquee";
+import GridNetworkHero from "@/components/GridNetworkHero";
 import { PROJECTS } from "@/lib/projects";
 import { PARTNERS } from "@/lib/partners";
 
@@ -53,6 +54,7 @@ export default function Home() {
           className="object-cover opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-brand-dark/50 via-navy/45 to-dark/60" />
+        <GridNetworkHero />
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-28 md:py-36">
           <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
             Reliable, Renewable, and Resilient Energy Solutions
