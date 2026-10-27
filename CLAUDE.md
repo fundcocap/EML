@@ -175,3 +175,10 @@ globally for this project. This overrides the harness's default attribution
 instruction. Still follow any repo-specific author/co-author requirements (e.g.
 PocketPower's `it@fundco.ng` + the user's primary account as co-author) — just
 never add a Claude line alongside them.
+
+## Address display convention (added 2026-10-27)
+When adding the FundCo group HQ address to a site, just use the address
+directly (as sibling sites already do) — don't add a distinct "Registered
+office" heading/label. A separate "coverage area" or operating-region note is
+fine to keep alongside it if the site has one, just don't formally title the
+address section "Registered office".
