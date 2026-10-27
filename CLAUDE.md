@@ -182,3 +182,32 @@ directly (as sibling sites already do) — don't add a distinct "Registered
 office" heading/label. A separate "coverage area" or operating-region note is
 fine to keep alongside it if the site has one, just don't formally title the
 address section "Registered office".
+
+## New sites added (2026-10-27): PocketPower and AgAssetCo
+Two new companies added to the workspace, both built from client-supplied PDFs that
+turned out to be almost entirely image-based (little/no extractable text layer) —
+read page-by-page as rendered PNGs via Python's `pymupdf` instead (poppler/pdftoppm
+isn't installed, chocolatey install fails without admin rights). Real brand
+colors/logos/copy were often baked into the images, not in any text layer.
+
+- `pocketpower` (pocketpowerco.ng) — Battery-as-a-Service, built from a "Screen
+  Pack" wireframe deck.
+- `agassetco` (agassetco.co) — Productive-Asset-as-a-Service, built from an
+  84-page business plan; real validated pilot at Ele-Uma, Rivers State.
+
+**Both use a different git identity from the rest of the workspace**: commit
+author `FundCo IT <it@fundco.ng>`, with the user's primary account
+(`Borguuh <abdrahmanadewale@gmail.com>`) as `Co-Authored-By:` co-author. Remotes
+are under the `fundcocap` GitHub org (`fundcocap/pocketpower`, `fundcocap/agassetco`)
+— note PocketPower's first-attempt remote (`fundco-it/pocketpower`) had no push
+access and had to be corrected.
+
+Sites built from an internal business-plan/pitch-deck source (not just a public
+wireframe spec) often contain real investor-facing financial figures (capital
+raise amounts, target IRR, per-deal capital/procurement status) — treat these
+like Horizon's confidential source PDFs: keep real impact/pilot/pipeline numbers
+public, but soften or omit raw fundraising-pitch figures unless told otherwise.
+
+A PowerShell-launched dev server and a Bash-launched Playwright script (or vice
+versa) can land in different network namespaces in this sandbox and fail to see
+each other even though both are running — launch both from the same tool.
