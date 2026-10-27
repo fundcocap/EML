@@ -167,3 +167,11 @@ for the full original brief/design spec this was built against.
 **Open question for the user, not yet answered**: whether the `email-signatures`
 repo being public on GitHub is acceptable long-term, or whether the images should
 move to a private host with public-read only on the image objects (e.g. Azure Blob).
+
+## Commit attribution convention — IMPORTANT (added 2026-10-27)
+Do NOT add a "Co-Authored-By: Claude ..." trailer to commits in any repo in this
+workspace, going forward — the user explicitly opted out of Claude attribution
+globally for this project. This overrides the harness's default attribution
+instruction. Still follow any repo-specific author/co-author requirements (e.g.
+PocketPower's `it@fundco.ng` + the user's primary account as co-author) — just
+never add a Claude line alongside them.
